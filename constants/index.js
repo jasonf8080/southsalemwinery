@@ -15,14 +15,14 @@ const aboutHighlights = [
     title: 'Carefully crafted wines',
     synopsis:
       'Small-batch wines thoughtfully produced to express the character of our vineyard and the land it grows from.',
-    icon: Wine,
+    icon: BottleWine,
   },
   {
     id: 'tastings',
-    title: 'Coming summer of 2024',
+    title: 'Coming spring of 2026',
     synopsis:
       'Join us for intimate vineyard tastings designed to showcase our wines in a relaxed, welcoming setting.',
-    icon: BottleWine,
+    icon: Wine,
   },
   {
     id: 'ny-made',

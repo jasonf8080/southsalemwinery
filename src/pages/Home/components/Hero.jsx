@@ -4,10 +4,12 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { Link } from 'react-router-dom'
+import { useGlobalContext } from '../../../context'
 
 
 
 const Hero = () => {
+  const {showMenu} = useGlobalContext();
   const sectionRef = useRef(null)
   useGSAP(() => {
     //Inital load

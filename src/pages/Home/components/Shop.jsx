@@ -67,7 +67,7 @@ const Shop = () => {
           ))}
         </div>
 
-        <Link to={'/shop'} className="btn primary-btn mt-20 w-full md:w-fit">Browse all wines</Link>
+        <Link to={'/shop'} className="btn primary-btn mt-20 w-full md:w-fit text-center">Browse all wines</Link>
       </div>
     </section>
   )
