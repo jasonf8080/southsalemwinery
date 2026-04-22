@@ -30,7 +30,7 @@ const About = () => {
   }, {scope: sectionRef})
 
   return (
-    <section ref={sectionRef} id='about' className='mt-[100px] pb-[120px]'>
+    <section ref={sectionRef} id='about' className='mt-[100px] pb-[120px] bg-primary'>
       <div className="container">
         <h1 className="title-md text-center">Explore one of our unprecedented experiences</h1>
         
@@ -57,7 +57,7 @@ const About = () => {
             ))}
         </div>
 
-        <Link to={'/about'} className="btn primary-btn mt-24 mx-auto block text-center w-full md:w-fit">About Us</Link>
+        
       </div>
     </section>
   )

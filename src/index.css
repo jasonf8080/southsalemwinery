@@ -16,7 +16,6 @@ html {
 
 
 
-
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -27,6 +26,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
       font-family: 'Playfair Display', serif;
+}
+
+section.bg-primary{
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+section.bg-secondary {
+  background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
 }
 
 .container {

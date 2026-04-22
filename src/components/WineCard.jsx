@@ -20,11 +20,11 @@ const WineCard = ({id, variant, name, image, price}) => {
                 loading='lazy'
               />
               <div className='p-6'>
-                <p className=' mb-2'>{variant}</p>
+                <p className=' mb-2 text-accent font-semibold'>{variant}</p>
                 <h3 className="title-sm mb-4 font-heading font-bold">{name}</h3>
-                <p className="text-accent font-bold text-lg">
+                {/* <p className="text-accent font-bold text-lg">
                   ${price}.00 USD
-                </p>
+                </p> */}
               </div>
         </article>
   )

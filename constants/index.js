@@ -5,7 +5,7 @@ const links = [
   { id: 'home', label: 'Home', path: '/' },
   { id: 'about', label: 'About', path: '/about' },
   // { id: 'contact', label: 'Contact', path: '/contact' },
-  { id: 'shop', label: 'Shop', path: '/shop' },
+  // { id: 'shop', label: 'Shop', path: '/shop' },
 ]
 
 
@@ -113,28 +113,28 @@ const aboutHighlights = [
     title: "The story behind our winery",
     content:
       "We are a small family owned micro winery dedicated to making the best wine possible. We source our grapes primarily from small vineyards on the north fork of Long Island. We produce small batches of wine, using long fermentations, soft presses, and barrel aging and no added chemicals.",
-    image: "/images/OurStory.jpeg",
+    image: "/images/winery9.jpg",
     imageAlt: "Winery"
   },
   {
     title: "Meet the winemaker: John Vuolo",
     content:
       "I was born in NYC in 1965. I started making wine at the age of five with my father along with my grandfather and have never stopped making it since. As a young man I fell in love with the art and craft of making wine. I have been making wine for almost 30 years now and enjoy crafting small batches of NYS wine at my micro winery in South Salem NY.",
-    image: "https://www.insidehook.com/wp-content/uploads/2022/09/napawinemaker.jpg",
+    image: "/images/winery7.PNG",
     imageAlt: "Picture of winemaker John Vuolo"
   },
   {
     title: "Inside the barrel room",
     content:
       "All of our wines are crafted in-house, from fermentation to bottling, allowing us to carefully guide every step of the winemaking process and ensure each bottle reflects our standards of quality and character.",
-    image: "https://barrelbuilders.com/wp-content/uploads/2022/10/wooden-barrels-in-the-wine-cellar-2022-02-04-05-10-06-utc-scaled.jpg",
+    image: "/images/winery3.JPEG",
     imageAlt: "South Salem Winery Barrel Room"
   },
   {
     title: "Orient Point Vineyrds North Fork of Long Island N.Y",
     content:
       "From the North Fork of Long Island, this coastal vineyard produces expressive grapes shaped by maritime climate. We source select wines here to showcase the region’s distinctive character.",
-    image: "https://www.zillowstatic.com/bedrock/app/uploads/sites/11/Thumbnail-04ad89.jpg",
+    image: "/images/winery10.JPG",
     imageAlt: "North Fork Vineyard"
   },
 ];

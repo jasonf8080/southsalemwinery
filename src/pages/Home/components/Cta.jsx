@@ -60,8 +60,8 @@ const Cta = () => {
              <h1 className='title-md my-6 text-center'>Come and live the best wine experience of your life</h1>
              <p className='text-lg text-center'>Enjoy curated tastings featuring our handcrafted wines, perfectly complemented by carefully selected food pairings.</p>
             <div className="flex flex-center max-w-[900px] mt-24">
-                <img loading='lazy'  src="/images/cta1.png" className='img-full translate-y-[-20px] translate-x-[20px] img-1' alt="winery" />
-                <img  loading='lazy' src="/images/cta2.png" className='img-full translate-y-[20px] translate-x-[-20px] img-2' alt="winery" />
+                <img loading='lazy'  src="/images/winery8.JPG" className='img-full max-w-[450px] translate-y-[-20px] translate-x-[20px] img-1' alt="winery" />
+                <img  loading='lazy' src="/images/winery2.JPG" className='img-full max-w-[450px] translate-y-[20px] translate-x-[-20px] img-2' alt="winery" />
             </div>
         </div>
     </section>

@@ -4,6 +4,7 @@ import About from './Home/components/About'
 import Cta from './Home/components/Cta'
 import Shop from './Home/components/Shop'
 import Location from './Home/components/Location'
+import Contact from './Home/Contact'
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
     <Cta/>
     <Shop/>
     <Location/>
+    <Contact/>
     </>
   )
 }

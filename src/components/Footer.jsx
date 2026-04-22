@@ -2,6 +2,7 @@ import React from 'react'
 import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../../constants'
+import Underline from './Underline'
 
 const Footer = () => {
   return (
@@ -29,16 +30,15 @@ const Footer = () => {
             </div>
         </div>
 
-        {/* Wine Club Signup */}
-        <div className='mt-4'>
-             <h3 className='mb-3 font-ui font-bold text-xl'>Sign up for our Wine Club</h3>
-             <p>Enter your email to get access to offers, sales, and events.</p>
-
-             <div className='flex justify-between border-b-[1px] border-b-white py-5 mt-8'>
-                <input type="text" placeholder='Enter your email' className='w-full outline-0 px-2' />
-                <button className="btn primary-btn">Subscribe</button>
-             </div>
-        </div>
+        {/* Hours */}
+         <div className='mt-4'>
+            <div className='location-info'>
+           
+              <p className='mb-5 md:mb-8 text-md md:text-md'><span className='font-bold mr-3'>Address:</span>1202 Route 35, South Salem, NY</p>
+              <p className='mb-5 md:mb-8 text-md md:text-md'><span className='font-bold mr-3'>Location:</span>Located inside the greenhouse at Gossetts Nursery.</p>
+              <p className='mb-5 md:mb-8 text-md md:text-md'><span className='font-bold mr-3'>Hours:</span>Thursday - Saturday: 7:00 AM - 7:00 PM Sunday: 7:00 AM - 5:00 PM</p>
+            </div> 
+        </div> 
       </div>
     </footer>
   )

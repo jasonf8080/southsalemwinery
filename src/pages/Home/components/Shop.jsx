@@ -40,7 +40,7 @@ const Shop = () => {
   }, {scope: sectionRef})
 
   return (
-    <section ref={sectionRef} id='quick-shop' className="py-[80px] md:py-[120px]">
+    <section ref={sectionRef} id='quick-shop' className="py-[80px] md:py-[120px] bg-primary">
       <div className="container flex flex-col items-center">
         <Underline width={'100'} mobileWidth={'100'} />
         <h1 className="title-md my-6 text-center">
@@ -67,7 +67,7 @@ const Shop = () => {
           ))}
         </div>
 
-        <Link to={'/shop'} className="btn primary-btn mt-20 w-full md:w-fit text-center">Browse all wines</Link>
+        {/* <Link to={'/shop'} className="btn primary-btn mt-20 w-full md:w-fit text-center">Browse all wines</Link> */}
       </div>
     </section>
   )

@@ -82,10 +82,10 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 mt-8">
           <div className="hero-content basis-[50%]">
             <h1 className="title-lg">
-              South Salem Winery & vineyard est. 1928
+              South Salem Winery -- <br/> Founded in 2014
             </h1>
-            <Link to={'/shop'} className="hidden md:block btn primary-btn w-fit mt-12">
-              Our Products
+            <Link to={'/about'} className="hidden md:block btn primary-btn w-fit mt-12">
+              Learn More
             </Link>
           </div>
 
