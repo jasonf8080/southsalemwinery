@@ -99,7 +99,7 @@ const Hero = () => {
           </div>
 
           <Link to={'/shop'} className="mobile-btn block md:hidden btn primary-btn w-full text-center mt-6">
-            Our Products
+            Learn More
           </Link>
         </div>
 
