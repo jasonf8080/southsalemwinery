@@ -6,20 +6,24 @@ import { useGSAP } from '@gsap/react'
 const Cta = () => {
   const sectionRef = useRef();
 
-  useGSAP(() => {
+useGSAP(() => {
+  const mm = gsap.matchMedia()
+
+  mm.add('(min-width: 768px)', () => {
+
     const timeline = gsap.timeline({
-        scrollTrigger: {
+      scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top center',
         toggleActions: 'play none none reverse'
       }
     })
 
-     timeline.fromTo(
+    timeline.fromTo(
       '.reveal-underline',
       {
         scaleX: 0,
-        transformOrigin: 'center center-=100',
+        transformOrigin: 'center center',
       },
       {
         scaleX: 1,
@@ -29,14 +33,20 @@ const Cta = () => {
     )
 
     timeline.from(
-      '.title-md', {opacity: 0, yPercent: -100}
+      '.title-md',
+      {
+        opacity: 0,
+        yPercent: -100
+      }
     )
 
     timeline.from(
-      'p',  {opacity: 0, yPercent: -100}
+      'p',
+      {
+        opacity: 0,
+        yPercent: -100
+      }
     )
-
-
 
     const imageTimeline = gsap.timeline({
       scrollTrigger: {
@@ -46,23 +56,36 @@ const Cta = () => {
         scrub: true
       }
     })
+
     imageTimeline
       .from('.img-1', { x: -20 }, 0)
       .from('.img-2', { x: 20 }, 0)
 
-  }, {scope: sectionRef})
+    // cleanup for this media query
+    return () => {
+      timeline.kill()
+      imageTimeline.kill()
+    }
+  })
+
+  return () => mm.revert()
+
+}, { scope: sectionRef })
 
   return (
-    <section ref={sectionRef} id='cta' className='py-[120px] bg-secondary relative'>
+      <section ref={sectionRef} id='cta' className='py-[120px] bg-secondary relative'>
       <img className='absolute w-[50px] md:w-[100px]  top-[50px] md:top-[50px] left-[25px] md:left-[50px] md:left-[100px] z-10' src="/images/heart.png" alt="" /> 
         <div className="container flex flex-col flex-center">
              <Underline width={'100'} mobileWidth={'100'}/>
              <h1 className='title-md my-6 text-center'>Come and live the best wine experience of your life</h1>
              <p className='text-lg text-center'>Enjoy curated tastings featuring our handcrafted wines, perfectly complemented by carefully selected food pairings.</p>
-            <div className="flex flex-center max-w-[900px] mt-24">
-                <img loading='lazy'  src="/images/winery8.JPG" className='img-full max-w-[450px] translate-y-[-20px] translate-x-[20px] img-1' alt="winery" />
-                <img  loading='lazy' src="/images/winery2.JPG" className='img-full max-w-[450px] translate-y-[20px] translate-x-[-20px] img-2' alt="winery" />
+
+            <div className="flex flex-center flex-col md:flex-row max-w-[900px] mt-24">
+                <img loading='lazy'  src="/images/winery8.JPG" className='img-fullmax-w-full md:max-w-[450px] md:translate-y-[-20px] md:translate-x-[20px] img-1' alt="winery" />
+                <img  loading='lazy' src="/images/winery2.JPG" className='img-fullmax-w-full md:max-w-[450px] translate-y-[20px] md:translate-x-[-20px] img-2' alt="winery" />
             </div>
+
+          <p className='text-lg text-center mt-16 font-bold'>* NO APPOINTMENTS NEEDED, WALK-INS WELCOME *</p>
         </div>
     </section>
   )
