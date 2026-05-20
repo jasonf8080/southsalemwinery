@@ -25,16 +25,16 @@ const Navbar = () => {
   
 
           {/* Cart */}
-          <button className='relative '> 
+          {/* <button className='relative '> 
               <span className='text-2xl'><HiOutlineShoppingBag/></span>
               <span className='absolute top-[-15px] right-[-12px] bg-accent rounded-full h-[20px] w-[20px] flex-center p-3'>0</span>
-          </button>
+          </button> */}
 
            {/* Mobile Menu Button */}
           <button className="block md:hidden p-1 ml-6 mb-2"
             onClick={() => setShowMenu(!showMenu)}
             >
-            <IoMdMenu className='text-3xl'/>
+            <IoMdMenu className='text-4xl'/>
           </button>
 
         </div>

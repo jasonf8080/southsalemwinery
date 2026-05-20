@@ -19,9 +19,9 @@ const aboutHighlights = [
   },
   {
     id: 'tastings',
-    title: 'Coming spring of 2026',
+    title: 'Wine Tastings',
     synopsis:
-      'Join us for intimate vineyard tastings designed to showcase our wines in a relaxed, welcoming setting.',
+      'Join us Thursday through Sunday for tastings designed to showcase our in-house made wines — no appointment necessary.',
     icon: Wine,
   },
   {
