@@ -13,8 +13,25 @@ const Footer = () => {
             <div>
                 <img src="/images/logo.jpg" className='max-w-[180px] h-auto mb-6' alt="South Salem Winery Logo" />
                 <div className="flex gap-4">
-                    <Link className='text-4xl' to={'#'}><FaFacebook/></Link>
-                    <Link className='text-4xl' to={'#'}><FaInstagram/></Link>
+                  <Link
+                    className='text-4xl'
+                    to='https://www.facebook.com/southsalemwinery/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    aria-label='Facebook'
+                  >
+                    <FaFacebook />
+                  </Link>
+
+                  <Link
+                    className='text-4xl'
+                    to='https://www.instagram.com/southsalemwinery/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    aria-label='Instagram'
+                  >
+                    <FaInstagram />
+                </Link>
                 </div>
             </div>
 

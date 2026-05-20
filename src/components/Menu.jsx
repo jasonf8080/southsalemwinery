@@ -31,8 +31,8 @@ const Menu = () => {
 
         {/* Socials */}
       <div className="flex-center text-4xl gap-6">
-        <a href="#"><BsFacebook/></a>
-        <a href="#"><BsInstagram/></a>
+        <a href="https://www.facebook.com/southsalemwinery/"><BsFacebook/></a>
+        <a href="https://www.instagram.com/southsalemwinery/"><BsInstagram/></a>
       </div>
       </div>
     </div>
