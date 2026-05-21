@@ -109,7 +109,7 @@ const Hero = () => {
             <p className='max-w-[900px] leading-[1.75rem] text-md md:leading-[3rem] md:text-xl font-heading text-center'>“Thoughtfully crafted, one bottle at a time — since 2014. Rooted in tradition, refined through patience, and shared in every pour.”</p>
           </div>
           <img
-            src="/images/gossetts.jpeg"
+            src="/images/IMG_1130.JPG"
             alt="Exterior of Gossetts Nursery"
             className="img-fill hero-img"
           />
