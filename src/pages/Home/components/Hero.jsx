@@ -106,7 +106,7 @@ const Hero = () => {
         {/* Hero Image */}
         <div id='hero-img-container' className="w-full h-[500px] md:h-[600px] relative mt-24 overflow-hidden">
           <div id="overlay" className='absolute top-0 left-0 bg-black/80 md:bg-black/70 w-full h-full flex-center opacity-0  z-20 p-10'>
-            <p className='max-w-[900px] leading-[1.75rem] text-md md:leading-[3rem] md:text-xl font-heading text-center'>“Thoughtfully crafted, one bottle at a time — since 2014. Rooted in tradition, refined through patience, and shared in every pour.”</p>
+            <p className='max-w-[900px] leading-[1.75rem] text-md md:leading-[3rem] md:text-xl font-heading text-center'>“Westchester's first micro winery, thoughtfully crafting one bottle at a time since 2014 — rooted in tradition, refined through perfection, and shared in every pour.”</p>
           </div>
           <img
             src="/images/IMG_1130.JPG"
