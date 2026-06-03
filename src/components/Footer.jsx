@@ -6,7 +6,7 @@ import Underline from './Underline'
 
 const Footer = () => {
   return (
-    <footer className=' py-[60px]'>
+    <footer className=' py-[60px] bg-black'>
       <div className="container flex flex-col-reverse md:flex-row justify-between">
         {/* Logo/Socials & Quick Links */}
         <div className="flex flex-col-reverse  md:flex-row gap-8 md:gap-24">
